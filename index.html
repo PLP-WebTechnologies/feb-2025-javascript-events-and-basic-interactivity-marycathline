@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1>My first interactive Form</h1>
+
+    <form id="myForm">
+        <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+            <div class="error-message" id="nameError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <div class="error-message" id="emailError"></div>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <div class="interactive-box">
+        <h2>Interactive Area</h2>
+        <p id="greeting">Hover over the text below!</p>
+        <p id="interactiveText">This is some interactive text.</p>
+        <button id="toggleButton">Highlight</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
